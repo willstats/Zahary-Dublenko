@@ -3,10 +3,19 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.pic img{
+  width: 40%;
+  height: auto;
+  float: left;
+  margin-left: 80px;
+  position: absolute;
+  margin-top: -20px;
+}
+
 .title {
-  margin-left: 40px;
+  margin-left: 50%;
   color: #669DB3FF;
-  margin-top: 25px;
+  margin-top: 80px;
 }
 
 .tab {
@@ -16,113 +25,87 @@ body {
   color: #669DB3FF;
 }
 
-#current1 {
-  border: 2px solid #A89C94FF;
-  height: 0.2px;
-  width: 61px;
-  margin-top: -20px;
-  float: right;
-  margin-right: 422px;
+.topdiv{
+  margin-right: 10%;
 }
 
-#current2 {
-  border: 2px solid #A89C94FF;
-  height: 0.2px;
-  width: 65px;
-  margin-top: -20px;
-  float: right;
-  margin-right: 332px;
-}
-
-#current3 {
-  border: 2px solid #A89C94FF;
-  height: 0.2px;
-  width: 69px;
-  margin-top: -20px;
-  float: right;
-  margin-right: 237px;
-}
-
-#current4 {
-  border: 2px solid #A89C94FF;
-  height: 0.2px;
-  width: 79px;
-  margin-top: -20px;
-  float: right;
-  margin-right: 130px;
-}
-
-#current5 {
-  border: 2px solid #A89C94FF;
-  height: 0.2px;
-  width: 84px;
-  margin-top: -20px;
-  float: right;
-  margin-right: 20px;
-}
-
-.sdiv {
-  border: 3px solid #A89C94FF;
-  height: 0.3px;
-  width: 85px;
-  margin-left: 40px;
-  margin-top: 75px;
+.current{
+  text-decoration: underline #FF4F58FF;
 }
 
 .subtitle {
-  margin-left: 40px;
   color: #669DB3FF;
-  margin-top: 20px;
   font-size: 40px;
+  text-align: right;
+  padding-top: 80px;
 }
 
 .subtitle2 {
-  margin-left: 40px;
   color: #669DB3FF;
   margin-top: -20px;
   font-size: 40px;
+  text-align: right;
 }
 
 .getstarted {
-  margin-left: 40px;
   font-size: 15px;
-  border: 1.5px solid #A89C94FF;
+  font-weight: 700;
+  border: 1.5px solid #669DB3FF;
   width: 115px;
   padding-left: 12px;
   height: 30px;
   color: #669DB3FF;
   padding-top: 10px;
   padding-left: 20px;
-  border-radius: 2.5px;
+  border-radius: 3px;
+  display: inline-block;
+  box-shadow: 0 5px 20px #8f8f8f2f;
+  transition: all 0.5s;
+  float: right;
+}
+
+.getstarted:hover{
+  box-shadow: 0 5px 30px #8f8f8f73;
+  background-color: #669db321;
+}
+
+.pgsubtitle{
+  padding-top: 80px;
+  margin-left: 8%;
+  font-size: 40px;
+  color: #669DB3FF;
+}
+
+.boxes > div{
+  background-color: #669db36e;
+  border-radius: 30px;
+  width: 25%;
+  height: 375px;
+  box-shadow: 0 5px 20px #8f8f8f65;
+  transition: box-shadow 0.3s;
+}
+
+.boxes > div:hover{
+  box-shadow: 0 5px 30px #8f8f8fb4;
 }
 
 .box1 {
-  background-color: #A89C94FF;
   float: left;
-  width: 25%;
-  height: 350px;
-  margin-left: 40px;
-  margin-top: 70px;
+  margin-left: 8%;
   border: 0;
 }
 
 .box2 {
-  background-color: #A89C94FF;
   margin: auto;
-  width: 25%;
-  height: 350px;
-  margin-top: 70px;
   border: 0;
+  margin-top: 190px; /** this is the only margin you need to change **/
 }
 
 .box3 {
-  background-color: #A89C94FF;
   float: right;
-  width: 25%;
-  height: 350px;
-  margin-right: 40px;
+  margin-right: 8%;
   border: 0;
-  margin-top: -350px;
+  margin-top: -375px;
 }
 
 #gaw {
@@ -133,7 +116,7 @@ body {
 .square {
   height: 33px;
   width: 33px;
-  background-color: #669DB3FF;
+  background-color: #FF4F58FF;
   float: left;
   margin-left: 30px;
   margin-top: 40px;
@@ -143,7 +126,7 @@ body {
   width: 0px;
   height: 0px;
   border-right: 20px solid transparent;
-  border-bottom: 30px solid #669DB3FF;
+  border-bottom: 30px solid #FF4F58FF;
   border-left: 20px solid transparent;
   float: left;
   margin-left: 30px;
@@ -151,7 +134,7 @@ body {
 }
 
 .circle {
-  background-color: #669DB3FF;
+  background-color: #FF4F58FF;
   height: 35px;
   width: 35px;
   border-radius: 35px;
@@ -186,14 +169,14 @@ body {
 }
 
 .emails {
-  margin-left: 40px;
+  margin-left: 8%;
   color: #669DB3FF;
   margin-top: 20px;
   font-size: 30px;
 }
 
 .emails2 {
-  margin-left: 40px;
+  margin-left: 8%;
   color: #669DB3FF;
   margin-top: 20px;
   font-size: 20px;
