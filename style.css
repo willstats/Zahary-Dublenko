@@ -3,123 +3,86 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.pic img{
-  width: 40%;
-  height: auto;
-  float: left;
-  margin-left: 80px;
-  position: absolute;
-  margin-top: -20px;
+.nav {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 20px;
 }
 
-.title {
-  margin-left: 50%;
+.nav a {
   color: #669DB3FF;
-  margin-top: 80px;
-}
-
-.tab {
-  float: right;
-  margin-right: 20px;
   text-decoration: none;
-  color: #669DB3FF;
 }
 
-.topdiv{
-  margin-right: 10%;
-}
-
-.current{
+#current {
   text-decoration: underline #FF4F58FF;
 }
 
-.subtitle {
-  color: #669DB3FF;
-  font-size: 40px;
-  text-align: right;
-  padding-top: 80px;
+#banner img {
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+  margin: 20px auto 10px;
+
 }
 
-.subtitle2 {
-  color: #669DB3FF;
-  margin-top: -20px;
-  font-size: 40px;
-  text-align: right;
+#action {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.getstarted {
+#action h1 {
+  color: #669DB3FF;
+}
+
+#button {
+  text-decoration: none;
+  padding: 10px 20px;
   font-size: 15px;
   font-weight: 700;
   border: 1.5px solid #669DB3FF;
-  width: 115px;
-  padding-left: 12px;
-  height: 30px;
   color: #669DB3FF;
-  padding-top: 10px;
-  padding-left: 20px;
   border-radius: 3px;
-  display: inline-block;
   box-shadow: 0 5px 20px #8f8f8f2f;
   transition: all 0.5s;
-  float: right;
 }
 
-.getstarted:hover{
+#button:hover{
   box-shadow: 0 5px 30px #8f8f8f73;
   background-color: #669db321;
 }
 
-.pgsubtitle{
-  padding-top: 80px;
-  margin-left: 8%;
-  font-size: 40px;
-  color: #669DB3FF;
+#boxes {
+  width: 80%;
+  padding-top: 60px;
+  margin: 0 auto;
 }
 
-.boxes > div{
+#boxes > div {
   background-color: #669db36e;
   border-radius: 30px;
-  width: 25%;
-  height: 375px;
-  box-shadow: 0 5px 20px #8f8f8f65;
+  box-shadow: 0 5px 20px #88888865;
   transition: box-shadow 0.3s;
+  padding: 10px 20px;
+  margin: 20px auto 20px;
+  max-width: 500px;
 }
 
-.boxes > div:hover{
-  box-shadow: 0 5px 30px #8f8f8fb4;
+#boxes > div:hover {
+  box-shadow: 0 5px 30px #88888865;
 }
 
-.box1 {
-  float: left;
-  margin-left: 8%;
-  border: 0;
+#boxes a {
+  color: #000;
 }
 
-.box2 {
-  margin: auto;
-  border: 0;
-  margin-top: 190px; /** this is the only margin you need to change **/
-}
-
-.box3 {
-  float: right;
-  margin-right: 8%;
-  border: 0;
-  margin-top: -375px;
-}
-
-#gaw {
-  text-decoration: none;
-  color: #669DB3FF;
-}
+/* shapes */
 
 .square {
   height: 33px;
   width: 33px;
   background-color: #FF4F58FF;
-  float: left;
-  margin-left: 30px;
-  margin-top: 40px;
+  margin-top: 14px;
 }
 
 .triangle {
@@ -128,9 +91,7 @@ body {
   border-right: 20px solid transparent;
   border-bottom: 30px solid #FF4F58FF;
   border-left: 20px solid transparent;
-  float: left;
-  margin-left: 30px;
-  margin-top: 40px;
+  margin-top: 14px;
 }
 
 .circle {
@@ -138,51 +99,76 @@ body {
   height: 35px;
   width: 35px;
   border-radius: 35px;
-  float: left;
-  margin-left: 30px;
-  margin-top: 40px;
+  margin-top: 14px;
 }
 
-.boxp {
-  color: black;
-  margin-left: 30px;
-  margin-right: 15px;
-}
-
-.boxh3 {
-  padding-top: 80px;
-  padding-left: 30px;
-}
-
-.boxh3dif {
-  padding-top: 100px;
-  padding-left: 30px;
-}
-
-.sdiv2 {
+.line {
   border: 2.5px solid #669DB3FF;
   background-color: #669DB3FF;
   height: 0.1px;
   width: 45px;
-  margin-left: 30px;
-  margin-top: -12px;
 }
 
-.emails {
-  margin-left: 8%;
-  color: #669DB3FF;
-  margin-top: 20px;
-  font-size: 30px;
+@media (min-width: 700px) {
+
+  #boxes > div {
+      float: left;
+  }
+
+  .nav {
+      font-size: 16px;
+      float: left;
+      margin-left: 10%;
+  }
 }
 
-.emails2 {
-  margin-left: 8%;
-  color: #669DB3FF;
-  margin-top: 20px;
-  font-size: 20px;
+@media (min-width: 1200px) {
+  
+  #boxes > div {
+      float: left;
+      width: 25%;
+      margin: 0 2% 0;
+  }
+
+  .nav {
+      float: right;
+      font-size: 14px;
+      margin-right: 5%;
+  }
+
+  #action {
+      float: right;
+      max-width: 200px;
+      text-align: right;
+      margin-right: 5%;
+      margin-top: -220px;
+  }
 }
 
-.contactlinks {
-  text-decoration: none;
-  color: #669DB3FF;
+@media (min-width: 1400px) {
+
+  .nav {
+      font-size: 16px;
+      margin-top: 3%;
+  }
+
+  #banner img {
+      margin-top: 3%;
+  }
+}
+
+@media (min-width: 1700px) {
+
+  .nav {
+      font-size: 18px;
+      margin-right: 16%;
+  }
+
+  #banner img {
+      margin-left: 8%;
+  }
+
+  #action {
+      margin-right: 16%;
+  }
 }
