@@ -1,3 +1,7 @@
+html, body {
+  overflow: auto;
+}
+
 body {
   background-color: #F0F6F7FF;
   font-family: 'Lato', sans-serif;
@@ -109,6 +113,63 @@ body {
   width: 45px;
 }
 
+
+/* other pages */
+
+#banner2 img {
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  max-width: 500px;
+  margin: 20px auto 10px;
+}
+
+#action2 {
+  width: 80%;
+  margin: 0 auto;
+  color: #669DB3FF;
+  margin-bottom: -60px;
+}
+
+.subtitle {
+  margin-left: 11%;
+  margin-top: 100px;
+  color: #669DB3FF;
+}
+
+.subtitle2 {
+  margin-left: 11%;
+  color: #669DB3FF;
+}
+
+.subtitle3 {
+  margin-left: 11%;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.contactlinks {
+  color: #FF4F58FF;
+}
+
+/* pricing page */
+
+.priceheader {
+  font-size: 22px;
+}
+
+.priceprice {
+  font-size: 28px;
+  color: #FF4F58FF;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.priceboxes {
+  padding-bottom: 40px;
+}
+
+
 @media (min-width: 700px) {
 
   #boxes > div {
@@ -127,7 +188,11 @@ body {
   #boxes > div {
       float: left;
       width: 25%;
-      margin: 0 2% 0;
+      margin: 40px 2% 0;
+  }
+
+  #box4 {
+    margin-top: 10%;
   }
 
   .nav {
@@ -143,6 +208,15 @@ body {
       margin-right: 5%;
       margin-top: -220px;
   }
+
+  #action2 h1 {
+      font-size: 40px;
+      float: right;
+      max-width: 200px;
+      text-align: right;
+      margin-right: -76px;
+      margin-top: -120px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -153,6 +227,10 @@ body {
   }
 
   #banner img {
+      margin-top: 3%;
+  }
+
+  #banner2 img {
       margin-top: 3%;
   }
 }
@@ -168,7 +246,17 @@ body {
       margin-left: 8%;
   }
 
+  #banner2 img {
+      margin-left: 8%;
+  }
+
   #action {
       margin-right: 16%;
   }
+
+  #action2 {
+      margin-right: 20%;
+  }
 }
+
+
